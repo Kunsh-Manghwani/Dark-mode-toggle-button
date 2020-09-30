@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dark mode toggle button</title>
+    <script src="../js/jquery.js"></script>
+    <script>
+    $("document").ready(function(){
+        $("#btn").click(function(){
+            $("body").toggleClass('colorbox');
+        });
+    });
+    </script>
+    <style>
+     body{
+     display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    text-align: center;
+    padding: 5rem;
+
+    transition: background 0.3s linear, color 0.3s linear;
+        }
+    button {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: rebeccapurple;
+    border-radius: 50%;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.3s linear;
+    }
+    .colorbox{
+        background-color: #1f1f1f;
+        color: white;
+    }
+
+    </style>
+</head>
+<body>
+    <button id="btn">☰</button>
+    <div>
+            <h1>
+                    Hi! I am Kunsh Manghwani
+                </h1>
+                <p>
+                    This web page contains a Dark mode toggle button to change your web page appearance into Dark.
+                    You can click on the hamburger button on the top right corner to experience it.
+                    Thanks for visiting .
+                </p>
+    </div>
+</body>
+</html>
