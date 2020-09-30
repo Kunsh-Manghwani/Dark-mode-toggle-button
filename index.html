@@ -10,26 +10,29 @@
     $("document").ready(function(){
         $("#btn").click(function(){
             $("body").toggleClass('colorbox');
+            $("#btn").toggleClass('chbtn');
         });
     });
     </script>
     <style>
-     body{
-     display: flex;
+        
+    body{
+    display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     min-height: 100vh;
     text-align: center;
     padding: 5rem;
-
     transition: background 0.3s linear, color 0.3s linear;
-        }
+    }
+        
     button {
+    color: white;
     position: fixed;
     top: 10px;
     right: 10px;
-    background-color: rebeccapurple;
+    background-color: blueviolet;
     border-radius: 50%;
     display: inline-block;
     width: 50px;
@@ -41,6 +44,10 @@
     .colorbox{
         background-color: #1f1f1f;
         color: white;
+    }
+     .chbtn{
+        background-color: white;
+        color: black;
     }
 
     </style>
